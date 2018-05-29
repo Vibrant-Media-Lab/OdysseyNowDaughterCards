@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Odyssey_Daughter_Card:OdysseyDaughterCard
+#
+DEF Odyssey_Daughter_Card:OdysseyDaughterCard X 0 40 Y Y 1 F N
+F0 "X" 0 -300 60 H V C CNN
+F1 "Odyssey_Daughter_Card:OdysseyDaughterCard" 0 350 60 H V C CNN
+F2 "" -200 200 60 H I C CNN
+F3 "" -200 200 60 H I C CNN
+DRAW
+S -50 250 50 -250 0 1 0 N
+X ~ 1 -150 200 100 R 50 50 1 1 B
+X ~ 10 150 -200 100 L 50 50 1 1 B
+X ~ 2 150 200 100 L 50 50 1 1 B
+X ~ 3 -150 100 100 R 50 50 1 1 B
+X ~ 4 150 100 100 L 50 50 1 1 B
+X ~ 5 -150 0 100 R 50 50 1 1 B
+X ~ 6 150 0 100 L 50 50 1 1 B
+X ~ 7 -150 -100 100 R 50 50 1 1 B
+X ~ 8 150 -100 100 L 50 50 1 1 B
+X ~ 9 -150 -200 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
