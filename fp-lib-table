@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Odyssey_Card)(type KiCad)(uri "$(KIPRJMOD)/footprints/Odyssey_Card.pretty")(options "")(descr ""))
+  (lib (name Odyssey_Daughter_Card)(type KiCad)(uri "$(KIPRJMOD)/footprints/Odyssey_Daughter_Card.pretty")(options "")(descr ""))
+)
