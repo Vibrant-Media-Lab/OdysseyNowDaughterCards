@@ -85,7 +85,7 @@ F 1 "BC556B" H 6591 3855 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6600 3825 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 6400 3900 50  0001 L CNN
 	1    6400 3900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q1
