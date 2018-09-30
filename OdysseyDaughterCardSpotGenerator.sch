@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Odyssey Daughter Card Template"
-Date "2018-05-29"
-Rev "0.1"
+Title "Odyssey Daughter Card Spot Generator"
+Date "2018-09-29"
+Rev "1.0"
 Comp "University of Pittsburgh - Odyssey Restoration Project"
 Comment1 "Levi Burner"
 Comment2 ""
@@ -504,4 +504,40 @@ Text Label 3050 3700 2    60   ~ 0
 Card9
 Text Label 5950 5550 3    60   ~ 0
 Card4
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5BB036BF
+P 8350 2250
+F 0 "J1" H 8430 2292 50  0000 L CNN
+F 1 "Conn_01x03" H 8430 2201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 2250 50  0001 C CNN
+F 3 "~" H 8350 2250 50  0001 C CNN
+	1    8350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2350 7850 2350
+Wire Wire Line
+	7850 2350 7850 2500
+$Comp
+L power:GND #PWR06
+U 1 1 5BB0543B
+P 7850 2500
+F 0 "#PWR06" H 7850 2250 50  0001 C CNN
+F 1 "GND" H 7855 2327 50  0000 C CNN
+F 2 "" H 7850 2500 50  0001 C CNN
+F 3 "" H 7850 2500 50  0001 C CNN
+	1    7850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2250 7850 2250
+Wire Wire Line
+	8150 2150 7850 2150
+Text Label 7850 2150 2    60   ~ 0
+Card2
+Text Label 7850 2250 2    60   ~ 0
+Card9
+Text Notes 7650 1950 0    60   ~ 0
+For sampling of player spot\nposition by emulator team
 $EndSCHEMATC
