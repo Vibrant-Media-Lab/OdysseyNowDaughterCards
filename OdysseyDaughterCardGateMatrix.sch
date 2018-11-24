@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Odyssey Daughter Card Gate Matrix"
-Date "2018-08-30"
+Date "2018-11-23"
 Rev "1.0"
 Comp "University of Pittsburgh - Odyssey Restoration Project"
 Comment1 "Levi Burner"
@@ -357,4 +357,25 @@ Text Label 5100 2400 0    60   ~ 0
 Card7
 Text Label 5100 2500 0    60   ~ 0
 Card9
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5BFA52EE
+P 3400 2400
+F 0 "J1" H 3320 2617 50  0000 C CNN
+F 1 "Conn_01x01" H 3320 2526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3400 2400 50  0001 C CNN
+F 3 "~" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	-1   0    0    -1  
+$EndComp
+Text Notes 3000 2100 0    60   ~ 0
+To Extra Player Gen
+Text Notes 2750 2400 0    60   ~ 0
+Any Contact
+Wire Wire Line
+	3600 2400 3850 2400
+Text Label 3850 2400 0    60   ~ 0
+Card2
+Text Notes 3350 2750 0    60   ~ 0
+Could go to 2 or 10\nconnected on motherboard
 $EndSCHEMATC

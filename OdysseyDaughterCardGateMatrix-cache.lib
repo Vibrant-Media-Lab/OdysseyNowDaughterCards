@@ -1,19 +1,35 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device:D_Schottky
+# Connector_Generic_Conn_01x01
 #
-DEF Device:D_Schottky D 0 40 N N 1 F N
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Schottky
+#
+DEF Device_D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Schottky" 0 -100 50 H V C CNN
+F1 "Device_D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
- *:D_*
+ D_*
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
@@ -24,15 +40,15 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:R_*
+ R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -41,16 +57,16 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode:1N4148
+# Diode_1N4148
 #
-DEF Diode:1N4148 D 0 40 N N 1 F N
+DEF Diode_1N4148 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Diode:1N4148" 0 -100 50 H V C CNN
+F1 "Diode_1N4148" 0 -100 50 H V C CNN
 F2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS 1N4448 1N4149 1N4151 1N914 BA243 BA244 BA282 BA283 BAV17 BAV18 BAV19 BAV20 BAV21 BAW75 BAW76 BAY93
 $FPLIST
- *:D*DO?35*
+ D*DO?35*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 50 -50 -50 N
@@ -61,11 +77,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Odyssey_Daughter_Card:OdysseyDaughterCard
+# Odyssey_Daughter_Card_OdysseyDaughterCard
 #
-DEF Odyssey_Daughter_Card:OdysseyDaughterCard X 0 40 Y Y 1 F N
+DEF Odyssey_Daughter_Card_OdysseyDaughterCard X 0 40 Y Y 1 F N
 F0 "X" 0 -300 60 H V C CNN
-F1 "Odyssey_Daughter_Card:OdysseyDaughterCard" 0 350 60 H V C CNN
+F1 "Odyssey_Daughter_Card_OdysseyDaughterCard" 0 350 60 H V C CNN
 F2 "" -200 200 60 H I C CNN
 F3 "" -200 200 60 H I C CNN
 DRAW
