@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Odyssey Daughter Card Summer"
-Date "2018-08-18"
-Rev "0.1"
+Date "2018-11-23"
+Rev "1.0"
 Comp "University of Pittsburgh - Odyssey Restoration Project"
 Comment1 "Levi Burner"
 Comment2 "Derived from the scan of the original service manual made by David Winter"
@@ -280,89 +280,6 @@ Card7
 Text Label 7500 5350 0    60   ~ 0
 Card10
 $Comp
-L Device:D D10
-U 1 1 5B790856
-P 5750 3200
-F 0 "D10" H 5750 2984 50  0000 C CNN
-F 1 "1N4448" H 5750 3075 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5750 3200 50  0001 C CNN
-F 3 "~" H 5750 3200 50  0001 C CNN
-	1    5750 3200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D9
-U 1 1 5B790898
-P 5750 2500
-F 0 "D9" H 5750 2284 50  0000 C CNN
-F 1 "1N4448" H 5750 2375 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5750 2500 50  0001 C CNN
-F 3 "~" H 5750 2500 50  0001 C CNN
-	1    5750 2500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5900 3200 6000 3200
-Wire Wire Line
-	6000 3200 6000 3750
-Wire Wire Line
-	5900 2500 6000 2500
-Wire Wire Line
-	6000 2500 6000 3200
-Connection ~ 6000 3200
-Wire Wire Line
-	5600 2500 5550 2500
-Wire Wire Line
-	5600 3200 5550 3200
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5B7939F4
-P 4550 3200
-F 0 "J3" H 4470 2975 50  0000 C CNN
-F 1 "Conn_01x01" H 4470 3066 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_single_1-5mmDrill" H 4550 3200 50  0001 C CNN
-F 3 "~" H 4550 3200 50  0001 C CNN
-	1    4550 3200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 5B793A6A
-P 4550 2500
-F 0 "J1" H 4470 2275 50  0000 C CNN
-F 1 "Conn_01x01" H 4470 2366 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_single_1-5mmDrill" H 4550 2500 50  0001 C CNN
-F 3 "~" H 4550 2500 50  0001 C CNN
-	1    4550 2500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5B797289
-P 5400 2500
-F 0 "R8" V 5607 2500 50  0000 C CNN
-F 1 "0" V 5516 2500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 2500 50  0001 C CNN
-F 3 "~" H 5400 2500 50  0001 C CNN
-	1    5400 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5250 2500 5200 2500
-$Comp
-L Device:R R9
-U 1 1 5B797380
-P 5400 3200
-F 0 "R9" V 5607 3200 50  0000 C CNN
-F 1 "0" V 5516 3200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 3200 50  0001 C CNN
-F 3 "~" H 5400 3200 50  0001 C CNN
-	1    5400 3200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5250 3200 5200 3200
-$Comp
 L Device:R R4
 U 1 1 5B7991E8
 P 5400 3750
@@ -415,79 +332,26 @@ $EndComp
 Wire Wire Line
 	5250 5950 4750 5950
 $Comp
-L Device:D_Schottky D12
-U 1 1 5B7997A7
-P 5000 3550
-F 0 "D12" H 5000 3334 50  0000 C CNN
-F 1 "BAT83S" H 5000 3425 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5000 3550 50  0001 C CNN
-F 3 "~" H 5000 3550 50  0001 C CNN
-	1    5000 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Schottky D11
-U 1 1 5B79985B
-P 5000 2850
-F 0 "D11" H 5000 2634 50  0000 C CNN
-F 1 "BAT83S" H 5000 2725 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5000 2850 50  0001 C CNN
-F 3 "~" H 5000 2850 50  0001 C CNN
-	1    5000 2850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 5B79DE19
-P 4550 2850
-F 0 "J2" H 4470 2625 50  0000 C CNN
-F 1 "Conn_01x01" H 4470 2716 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_single_1-5mmDrill" H 4550 2850 50  0001 C CNN
-F 3 "~" H 4550 2850 50  0001 C CNN
-	1    4550 2850
-	-1   0    0    1   
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5BF8D91F
+P 4800 2800
+F 0 "J1" H 4720 3017 50  0000 C CNN
+F 1 "Conn_01x02" H 4720 2926 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 2800 50  0001 C CNN
+F 3 "~" H 4800 2800 50  0001 C CNN
+	1    4800 2800
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2850 4850 2850
+	5000 2900 5200 2900
 Wire Wire Line
-	5150 2850 5200 2850
+	6000 2800 6000 3750
 Wire Wire Line
-	5200 2850 5200 2500
-Connection ~ 5200 2500
-Wire Wire Line
-	5200 2500 4750 2500
-$Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 5B7A2B6E
-P 4550 3550
-F 0 "J4" H 4470 3325 50  0000 C CNN
-F 1 "Conn_01x01" H 4470 3416 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_single_1-5mmDrill" H 4550 3550 50  0001 C CNN
-F 3 "~" H 4550 3550 50  0001 C CNN
-	1    4550 3550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5150 3550 5200 3550
-Wire Wire Line
-	5200 3550 5200 3200
-Connection ~ 5200 3200
-Wire Wire Line
-	5200 3200 4750 3200
-Wire Wire Line
-	4750 3550 4850 3550
-Wire Notes Line
-	4300 2200 4300 3650
-Wire Notes Line
-	4300 3650 5250 3650
-Wire Notes Line
-	5250 3650 5250 3400
-Wire Notes Line
-	5250 3400 6100 3400
-Wire Notes Line
-	6100 3400 6100 2200
-Wire Notes Line
-	6100 2200 4300 2200
-Text Notes 4300 2150 0    60   ~ 0
-Extra player inputs
+	5000 2800 6000 2800
+Text Label 5200 2900 0    60   ~ 0
+Card5
+Text Notes 3950 2800 0    60   ~ 0
+Extra Players In
+Text Notes 3950 2900 0    60   ~ 0
+Ball Signal Out
 $EndSCHEMATC
