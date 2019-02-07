@@ -63,8 +63,6 @@ Wire Wire Line
 	4650 2750 4300 2750
 Wire Wire Line
 	4650 2850 4300 2850
-Wire Wire Line
-	4650 2950 4300 2950
 $Comp
 L Device:D D1
 U 1 1 5B78583C
@@ -320,7 +318,7 @@ F 1 "TLV3542" H 8808 1805 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8750 1850 50  0001 C CNN
 F 3 "" H 8750 1850 50  0001 C CNN
 	3    8750 1850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R12
@@ -476,7 +474,7 @@ L Device:R R4
 U 1 1 5C5E2409
 P 7650 6300
 F 0 "R4" H 7580 6254 50  0000 R CNN
-F 1 "1k" H 7580 6345 50  0000 R CNN
+F 1 "4.7k" H 7580 6345 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 6300 50  0001 C CNN
 F 3 "~" H 7650 6300 50  0001 C CNN
 	1    7650 6300
@@ -487,7 +485,7 @@ L Device:R R5
 U 1 1 5C5E2485
 P 7650 6900
 F 0 "R5" H 7580 6854 50  0000 R CNN
-F 1 "200" H 7580 6945 50  0000 R CNN
+F 1 "820" H 7580 6945 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 6900 50  0001 C CNN
 F 3 "~" H 7650 6900 50  0001 C CNN
 	1    7650 6900
@@ -553,17 +551,6 @@ Wire Wire Line
 Connection ~ 9400 7400
 Wire Wire Line
 	9400 7400 10000 7400
-$Comp
-L Connector:Conn_Coaxial J3
-U 1 1 5C5FC8A0
-P 11150 7400
-F 0 "J3" H 11100 7650 50  0000 L CNN
-F 1 "Conn_Coaxial" H 10900 7550 50  0000 L CNN
-F 2 "RCA_Switchcraft_PJRAN1X1U04X:CONN_RCA_JACK_MONO_3.2MM_Switchcraft_PJRAN1X1U04X" H 11150 7400 50  0001 C CNN
-F 3 " ~" H 11150 7400 50  0001 C CNN
-	1    11150 7400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10300 7400 10950 7400
 Wire Wire Line
@@ -589,7 +576,7 @@ Wire Wire Line
 Text Notes 9600 6600 0    60   ~ 0
 Constraints\nOdyssey Vwhite = 1.7V\nOdyssey Vblack = 1.1V\nOdyssey Vsync = 0.6V\n\nTarget Vwhite = 1.064V\nTarget Vblack = 0.35V\n\nDiff amp gain = 2.856\nDiff amp offset = 0.855V\nx2 because of 75 Ohm back termination\n\nChoose voltage divider in 100's of ohms and\ndiff amp resistors in 10's of kOhms\nVerify that peak voltage is below 2V
 Text Notes 7950 6150 0    60   ~ 0
-5.6V supply\n0.855V target\nRatio R2/(R1+R2) = 0.15\n200/(1000+200) = 0.16\n1k || 133k = 992\n200 || 133k = 199.7
+5.6V supply\n0.855V target\nRatio R2/(R1+R2) = 0.15\n820/(4700+820) = 0.15\n4.7k || 133k = 4.5k\n820 || 133k = 815
 Text Notes 9150 8050 0    60   ~ 0
 Differential Amp\nR1 = R3\nR2 = R4\nGain = R1/R2 = R3/R4 = 2.856\n100k/33k = 3
 Connection ~ 7900 1550
@@ -602,7 +589,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 6000 7000 6000
 Text Notes 11550 8150 0    60   ~ 0
-Check Constraint Fulfillment\nOdyssey White\n(1.7 - 0.16*5.6)*3 = 2.412 \n=> 1.206V at load\nOdyssey Black\n(1.1 - 0.16*5.6)*3 = 0.612\n=> 0.306V at load\nOdyssey Sync\n(0.6 - 0.16 * 5.6) < 0 = 0V\n=> 0V at load\n\nWhite - Black = 0.9V > 0.714V\nEnsures black white contrast\n\nBlack - Sync = 0.3V > 0.284V\nAdequate black to sync difference
+Check Constraint Fulfillment\nOdyssey White\n(1.7 - 0.15*5.6)*3 = 2.58 \n=> 1.29V at load\nOdyssey Black\n(1.1 - 0.16*5.6)*3 = 0.780\n=> 0.390V at load\nOdyssey Sync\n(0.6 - 0.15 * 5.6) < 0 = 0V\n=> 0V at load\n\nWhite - Black = 0.9V > 0.714V\nEnsures black white contrast\n\nBlack - Sync = 0.39V > 0.284V\nAdequate black to sync difference
 $Comp
 L power:GND #PWR05
 U 1 1 5C610CC3
@@ -633,4 +620,45 @@ Wire Wire Line
 	7000 3200 7000 6000
 Text Notes 10000 3700 0    60   ~ 0
 Odyssey Hsync output has malformed sync pulse\nRamps from Vcc to about 0.8 * Vcc over 5us\nGoes to 0V for 5us\nBack up to Vcc\nThis lengthens sync pulse to 10us after diff amp\nCauses TV to sample sync level as black level causing elevated brightness\n\nCondition with a comparator threshold of 0.15 * Vcc\n1/(4.7+1) = 0.17\n0.17*5.6 = 1V
+$Comp
+L power:GND #PWR0101
+U 1 1 5C6326CE
+P 7500 2400
+F 0 "#PWR0101" H 7500 2150 50  0001 C CNN
+F 1 "GND" H 7505 2227 50  0000 C CNN
+F 2 "" H 7500 2400 50  0001 C CNN
+F 3 "" H 7500 2400 50  0001 C CNN
+	1    7500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2250 7500 2400
+Connection ~ 7500 2250
+$Comp
+L power:VCC #PWR0102
+U 1 1 5C634692
+P 7500 1300
+F 0 "#PWR0102" H 7500 1150 50  0001 C CNN
+F 1 "VCC" H 7517 1473 50  0000 C CNN
+F 2 "" H 7500 1300 50  0001 C CNN
+F 3 "" H 7500 1300 50  0001 C CNN
+	1    7500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1300 7500 1550
+Connection ~ 7500 1550
+Wire Wire Line
+	4650 2950 4300 2950
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5C5FC8A0
+P 11150 7400
+F 0 "J3" H 11100 7650 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10900 7550 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11150 7400 50  0001 C CNN
+F 3 " ~" H 11150 7400 50  0001 C CNN
+	1    11150 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
