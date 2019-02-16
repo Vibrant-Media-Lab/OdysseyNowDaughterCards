@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title "Odyssey Daughter Card Spot Generator")
-    (date 2018-11-23)
-    (rev 1.1)
+    (date 2019-02-16)
+    (rev 1.2)
     (company "University of Pittsburgh - Odyssey Restoration Project")
     (comment 1 "Levi Burner")
   )
@@ -1033,10 +1033,10 @@
     )
   )
 
-  (gr_text Vsync (at 154.686 83.312 270) (layer F.SilkS) (tstamp 5C13094B)
+  (gr_text Hsync (at 154.686 83.312 270) (layer F.SilkS) (tstamp 5C13094B)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
-  (gr_text Hsync (at 154.686 79.502 270) (layer F.SilkS) (tstamp 5C130947)
+  (gr_text Vsync (at 154.686 79.502 270) (layer F.SilkS) (tstamp 5C130947)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
   (gr_text "Extra Pl Gen" (at 158.75 81.28 270) (layer F.SilkS) (tstamp 5C13092D)
