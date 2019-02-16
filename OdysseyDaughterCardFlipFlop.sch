@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Odyssey Daughter Card Flip Flop"
-Date "2018-11-23"
-Rev "1.0"
+Date "2019-02-16"
+Rev "1.1"
 Comp "University of Pittsburgh - Odyssey Restoration Project"
 Comment1 "Levi Burner"
 Comment2 "Derived from the scan of the original service manual made by David Winter"
@@ -413,33 +413,21 @@ Text Label 4350 1850 0    60   ~ 0
 Card5
 Text Label 4350 1950 0    60   ~ 0
 Card3
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5BF9F611
-P 3850 1750
-F 0 "J1" H 3770 2067 50  0000 C CNN
-F 1 "Conn_01x04" H 3770 1976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 1750 50  0001 C CNN
-F 3 "~" H 3850 1750 50  0001 C CNN
-	1    3850 1750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 1650 4350 1650
-Wire Wire Line
-	4050 1750 4350 1750
-Text Label 4350 1650 0    60   ~ 0
-Card10
-Text Label 4350 1750 0    60   ~ 0
-Card4
-Text Notes 3750 1350 0    60   ~ 0
+Text Notes 3400 1550 0    60   ~ 0
 To Extra Player Gen
-Text Notes 3550 1650 0    60   ~ 0
-VDD
-Text Notes 3550 1750 0    60   ~ 0
-GND
 Text Notes 3000 1850 0    60   ~ 0
 Extra 1 Contact
 Text Notes 3000 1950 0    60   ~ 0
 Extra 2 Contact
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C6AAEE1
+P 3850 1850
+F 0 "J1" H 3770 2067 50  0000 C CNN
+F 1 "Conn_01x02" H 3770 1976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 1850 50  0001 C CNN
+F 3 "~" H 3850 1850 50  0001 C CNN
+	1    3850 1850
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
