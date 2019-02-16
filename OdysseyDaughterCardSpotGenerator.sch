@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Odyssey Daughter Card Spot Generator"
-Date "2018-11-23"
-Rev "1.1"
+Date "2019-02-16"
+Rev "1.2"
 Comp "University of Pittsburgh - Odyssey Restoration Project"
 Comment1 "Levi Burner"
 Comment2 ""
@@ -540,17 +540,6 @@ Text Label 7850 2250 2    60   ~ 0
 Card9
 Text Notes 7650 1950 0    60   ~ 0
 For sampling of player spot\nposition by emulator team
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5BF93A6E
-P 3050 2150
-F 0 "J2" H 2970 2367 50  0000 C CNN
-F 1 "Conn_01x02" H 2970 2276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 2150 50  0001 C CNN
-F 3 "~" H 3050 2150 50  0001 C CNN
-	1    3050 2150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 2150 3600 2150
 Wire Wire Line
@@ -559,10 +548,33 @@ Text Label 3600 2150 0    60   ~ 0
 Card10
 Text Label 3600 2250 0    60   ~ 0
 Card1
-Text Notes 3000 1850 0    60   ~ 0
+Text Notes 2600 1600 0    60   ~ 0
 To Extra Player Generator
 Text Notes 2600 2150 0    60   ~ 0
 H Sync
 Text Notes 2600 2250 0    60   ~ 0
 V Sync
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5C69F9A0
+P 3050 2050
+F 0 "J2" H 2970 2367 50  0000 C CNN
+F 1 "Conn_01x04" H 2970 2276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3050 2050 50  0001 C CNN
+F 3 "~" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1950 3600 1950
+Wire Wire Line
+	3250 2050 3600 2050
+Text Label 3600 1950 0    60   ~ 0
+Card6
+Text Label 3600 2050 0    60   ~ 0
+Card3
+Text Notes 2600 2050 0    60   ~ 0
+GND
+Text Notes 2600 1950 0    60   ~ 0
+VDD
 $EndSCHEMATC
