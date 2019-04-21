@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name Odyssey_Card)(type Legacy)(uri ${KIPRJMOD}/symbols/Odyssey_Card.lib)(options "")(descr ""))
   (lib (name Odyssey_Daughter_Card)(type Legacy)(uri C:/Kicad_library/templates/OdysseyDaughterCardTemplate/symbols/Odyssey_Daughter_Card.lib)(options "")(descr ""))
+  (lib (name OdysseyDaughterCardVertSyncGenerator-rescue)(type Legacy)(uri ${KIPRJMOD}/OdysseyDaughterCardVertSyncGenerator-rescue.lib)(options "")(descr ""))
 )

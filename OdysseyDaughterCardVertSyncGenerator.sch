@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:OdysseyDaughterCardVertSyncGenerator-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Odyssey_Daughter_Card:OdysseyDaughterCard X1
+L OdysseyDaughterCardVertSyncGenerator-rescue:OdysseyDaughterCard-Odyssey_Daughter_Card X1
 U 1 1 5B0D981F
 P 5700 3700
 F 0 "X1" H 5700 4147 60  0000 C CNN
@@ -343,4 +343,6 @@ NoConn ~ 5200 3500
 NoConn ~ 5950 3500
 NoConn ~ 5950 3800
 NoConn ~ 5950 3900
+Text Notes 7550 4550 0    60   ~ 0
+This is BLAK version, not comptabile with BK12 Odysseys\nSee "How to Repair Video Games" by Robert Goodman pg. 138-141\nfor BK12 schematic
 $EndSCHEMATC
