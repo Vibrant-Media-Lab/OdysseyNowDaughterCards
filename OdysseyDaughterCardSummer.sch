@@ -15,7 +15,7 @@ Comment3 "Includes conditioning circuit for connection to NTSC TV input"
 Comment4 ""
 $EndDescr
 $Comp
-L Odyssey_Daughter_Card:OdysseyDaughterCard X1
+L OdysseyDaughterCardSummer-rescue:OdysseyDaughterCard-Odyssey_Daughter_Card X1
 U 1 1 5B0D981F
 P 4800 2750
 F 0 "X1" H 4800 3197 60  0000 C CNN
@@ -264,17 +264,6 @@ Text Label 8650 3100 0    60   ~ 0
 Card7
 Text Label 6600 6900 0    60   ~ 0
 Card10
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5BF8D91F
-P 3700 4250
-F 0 "J1" H 3620 4467 50  0000 C CNN
-F 1 "Conn_01x02" H 3620 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 4250 50  0001 C CNN
-F 3 "~" H 3700 4250 50  0001 C CNN
-	1    3700 4250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3900 4350 4100 4350
 Wire Wire Line
@@ -283,7 +272,7 @@ Wire Wire Line
 	3900 4250 4900 4250
 Text Label 4100 4350 0    60   ~ 0
 Card5
-Text Notes 2850 4250 0    60   ~ 0
+Text Notes 2850 4210 0    60   ~ 0
 Extra Players In
 Text Notes 2850 4350 0    60   ~ 0
 Ball Signal Out
@@ -661,4 +650,20 @@ F 3 " ~" H 11150 7400 50  0001 C CNN
 	1    11150 7400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5EC83BF2
+P 3700 4250
+F 0 "J1" H 3620 4567 50  0000 C CNN
+F 1 "Conn_01x03" H 3620 4476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3700 4250 50  0001 C CNN
+F 3 "~" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4150 4900 4150
+Wire Wire Line
+	4900 4150 4900 4250
+Connection ~ 4900 4250
 $EndSCHEMATC

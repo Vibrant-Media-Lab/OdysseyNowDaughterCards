@@ -2,4 +2,5 @@
   (lib (name Odyssey_Card)(type Legacy)(uri ${KIPRJMOD}/symbols/Odyssey_Card.lib)(options "")(descr ""))
   (lib (name Odyssey_Daughter_Card)(type Legacy)(uri C:/Kicad_library/templates/OdysseyDaughterCardTemplate/symbols/Odyssey_Daughter_Card.lib)(options "")(descr ""))
   (lib (name TLV3542)(type Legacy)(uri ${KIPRJMOD}/symbols/TLV3542.lib)(options "")(descr ""))
+  (lib (name OdysseyDaughterCardSummer-rescue)(type Legacy)(uri ${KIPRJMOD}/OdysseyDaughterCardSummer-rescue.lib)(options "")(descr ""))
 )
