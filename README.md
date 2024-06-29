@@ -14,7 +14,6 @@ Replacement daughter card schematics and layouts for the Magnavox Odyssey BLAK v
   
 ## TODO
 * Choose an open source hardware license (currently all rights reserved)
-* Bill of Materials
 
 ## Old Designs (legacy)
 The original git history for each card (including old prototypes that were made and are likely to be floating around in the VML) be found on the `legacy-*` branches.
