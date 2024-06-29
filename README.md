@@ -11,9 +11,13 @@ Replacement daughter card schematics and layouts for the Magnavox Odyssey BLAK v
   * `pdf/` (pdfs of schematic and layout)
   * `symbols/` (non-standard symbol libraries for project)
   * `dimensions.txt` (board dimension in meters for easier ordering from places like AllPCB)
-  
-## TODO
-* Choose an open source hardware license (currently all rights reserved)
+
+## Bill of Materials
+* See OdysseyDaughtCardsBillOfMaterials.xlsx for a list components used in the last round of boards made in the VML.
+
+## License
+* Designed by Levi Burner and Zachary Horton
+* Each card's design is available under Creative Commons Attribution. All license text must be included in any redistribution and attribution must be given to original design and designers. See LICENSE.txt in each card's folder for additional details.
 
 ## Old Designs (legacy)
 The original git history for each card (including old prototypes that were made and are likely to be floating around in the VML) be found on the `legacy-*` branches.
